@@ -35,10 +35,43 @@ function expect(target) {
 // \___/\____/_/ /_/____/\__/_/   \__,_/\___/\__/\____/_/  /____/
 //
 // Only add code to *THIS* section!
+function Dog(obj) {
+  this.status = 'normal'
+  this.color = 'black'
+  if(obj) {
+    if(obj.hasOwnProperty('hungry')) {
+      this.hungry = obj.hungry
+    } else {this.hungry = true}
+  }
+  if(obj) {
+    if(obj.hasOwnProperty('owner')) {
+      this.owner = obj.owner
+    } else {
 
-// ????????
-// ????????
-// ????????
+    }
+  }
+  
+}
+
+
+function Human(obj) {
+  Human.prototype.pet = function(dog) {
+    return dog.status = 'happy'
+  }
+  Human.prototype.feed = function(dog) {
+    return dog.hungry = false
+  }
+  if(obj && obj.hasOwnProperty('cool')) {
+    this.cool = obj.cool  
+  } else {
+    this.cool = false
+  }
+
+}
+
+
+
+
 
 
 //        __
